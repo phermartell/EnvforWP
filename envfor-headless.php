@@ -30,6 +30,8 @@ require_once ENVFOR_HEADLESS_DIR . 'includes/cpt-sector.php';
 require_once ENVFOR_HEADLESS_DIR . 'includes/class-envfor-sector-rest.php';
 require_once ENVFOR_HEADLESS_DIR . 'includes/class-envfor-about-admin.php';
 require_once ENVFOR_HEADLESS_DIR . 'includes/class-envfor-about-rest.php';
+require_once ENVFOR_HEADLESS_DIR . 'includes/class-envfor-testimonials-admin.php';
+require_once ENVFOR_HEADLESS_DIR . 'includes/class-envfor-testimonials-rest.php';
 
 // Initialize
 function envfor_headless_init() {
@@ -47,5 +49,7 @@ function envfor_headless_init() {
     Envfor_Sector_Rest::init();
     Envfor_About_Admin::init();
     Envfor_About_Rest::init();
+    Envfor_Testimonials_Admin::init();
+    Envfor_Testimonials_Rest::init();
 }
 add_action( 'plugins_loaded', 'envfor_headless_init' );
